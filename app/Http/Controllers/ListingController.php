@@ -78,7 +78,6 @@ class ListingController extends Controller
     ]);
 
 
-
     
     if($request->hasFile('logo')){
         // command to access file link : php artisan storage:link

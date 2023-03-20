@@ -42,8 +42,7 @@ Route::get('/listing/{listing}/{logo}', function($logo){
 });
 // edit Submit to update
 
-Route::put('/listing/{listing}', [ListingController::class, 'update']);
-// ->middleware('auth');
+Route::put('/listing/{listing}', [ListingController::class, 'update'])->middleware('auth');
 
 
 // delete Listing
